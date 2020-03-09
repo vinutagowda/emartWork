@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   
-    <img src="assets/emart.png" height="50" width="50"alt="not found">
+    <img src="assets/emart.png" height="70" width="70"alt="not found">
 
 
   <button class="navbar-toggler" type="button"
@@ -14,29 +14,47 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="existinguser">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="newuser"> Sign Up</a>
-      </li>
+      
       <li class="nav-item">
         <a class="nav-link" routerLink="cat"> Category</a>
       </li>
+     
       
-      <li class="nav-item">
-        <a class="nav-link" routerLink="prdt">Product</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="contact">Contact</a>
-      </li>
+     
+      
     </ol>
     </div>
   
 
-    <div class="md-form mt-0" >
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <div class="md-form mt-1" >
+      <input class="form-control mr-sm-5" type="text" placeholder="Search">
     </div>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="glyphicon glyphicon-user"> MyAccount </span>
+      </button>
+       <div class="dropdown-menu dropdown-menu-right"> 
+        <a href="existinguser">
+        <button class="dropdown-item" type="button">Login</button> 
+      </a>
+      <a href="newuser">
+        <button class="dropdown-item" type="button">Buyer SignUp</button>
+    
+      </a>
+      <a href="sup">
+        <button class="dropdown-item" type="button">Seller SignUp</button>
+        </a>
+      </div>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <a href="cart" class="btn btn-info">
+      <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+    </a>
+
 </nav>
 
 <router-outlet> </router-outlet>

@@ -1,0 +1,25 @@
+<form (ngSubmit)="save()">
+    <div class="signup">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <!-- <hr> -->
+  
+      <label ><b>username</b></label>
+      <input type="text" placeholder="username" name="uname" required  [(ngModel)]="reg.username"/>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required  [(ngModel)]="reg.password"/>
+  
+      <label for="psw-confirm"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-confirm" required   [(ngModel)]="reg.confirmPassword"/>
+      <!-- <hr> -->
+      
+      
+      <a href=" newuser">
+       
+        <button type="submit" class="signup" >signup</button>
+      </a>
+    </div>
+   
+    
+  </form>

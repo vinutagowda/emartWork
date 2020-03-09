@@ -1,17 +1,17 @@
-<form action="action_page.php" method="post">
+<form   (ngSubmit)="save()">
     <div class="imglogin">
       <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
     </div>
     
     <div class="login ">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required><br><br>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-  
-      <button type="submit">Login</button><br><br>
+      <label ><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname"   [(ngModel)]="user.username" />
+    
+      <label ><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw"    [(ngModel)]="user.password" />
      
+      <button (click)="ngSubmit" >Login</button><br><br>
+   
     </div>
   
     <div class="login" style="background-color:#f1f1f1">
