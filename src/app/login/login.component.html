@@ -1,4 +1,6 @@
+<div class="loginimg">
 <form   (ngSubmit)="save()">
+  
     <div class="imglogin">
       <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
     </div>
@@ -9,10 +11,19 @@
     
       <label ><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw"    [(ngModel)]="user.password" />
-     
-      <button (click)="ngSubmit" >Login</button><br><br>
+      <label>
+
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+        
+    
+    <button (click)="ngSubmit" >Login</button><br><br>
+    <a href="for">ForgetPassword</a>
    
-    </div>
+  </div>
+
+
+
   
     <div class="login" style="background-color:#f1f1f1">
     
@@ -20,3 +31,4 @@
       
     </div>
   </form>
+</div>

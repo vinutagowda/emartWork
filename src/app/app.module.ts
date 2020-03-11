@@ -9,7 +9,6 @@ import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
 import { HomeComponent } from './home/home.component';
 import {ActivatedRoute} from '@angular/router';
-import { ContactComponent } from './contact/contact.component';
 import { ElectonicComponent } from './electonic/electonic.component';
 import { ClothesComponent } from './clothes/clothes.component';
 import { GroceriesComponent } from './groceries/groceries.component';
@@ -38,6 +37,11 @@ import { AddCategoryComponent } from './add-category/add-category.component';
 import { SellerSignupComponent } from './seller-signup/seller-signup.component';
 import{HttpClient, HttpClientModule} from '@angular/common/http';
 import { RegistrationComponent } from './registration/registration.component';
+import { Product1Component } from './product1/product1.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
@@ -49,7 +53,7 @@ import { RegistrationComponent } from './registration/registration.component';
     CategoryComponent,
     HomeComponent,
   
-    ContactComponent,
+  
     ElectonicComponent,
     ClothesComponent,
     GroceriesComponent,
@@ -75,7 +79,12 @@ import { RegistrationComponent } from './registration/registration.component';
     CartComponent,
     CheckoutComponent,
     AddCategoryComponent,
-    SellerSignupComponent
+    SellerSignupComponent,
+    Product1Component,
+    ForgetpasswordComponent,
+    FooterComponent,
+    HeaderComponent,
+    OrderComponent
  
 
   ],
